@@ -1,0 +1,82 @@
+/* Modal Styles */
+.modal-content {
+    background-color: var(--bs-dark-subtle);
+    border: 1px solid var(--bs-border-color);
+    box-shadow: 0 0 30px rgba(255, 0, 85, 0.4);
+}
+
+.ticket-options {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.ticket-type {
+    background: var(--bs-dark);
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.ticket-type:hover {
+    border-color: var(--secondary-color);
+}
+
+.ticket-type h3 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    color: var(--secondary-color);
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.quantity-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1.5rem;
+}
+
+.quantity-input {
+    width: 60px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 1px solid #444;
+    background: var(--bs-dark);
+    color: var(--bs-body-color);
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    -moz-appearance: textfield;
+    max-width: 70px;
+}
+
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.total-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.total-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Hide original buy button, PayPal buttons will be used instead */
+#buy-btn-placeholder {
+    display: none;
+}
